@@ -1,6 +1,9 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const PORT = process.env.PORT || 3001;
+const MONGO_URL = process.env.MONGO_URL;
+
 
 const app = express();
 
@@ -81,4 +84,4 @@ app.put("/todo/update/:id", async (req, res) => {
     }
 });
 
-app.listen(3001);
+app.listen(PORT);
