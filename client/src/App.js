@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-const api_base = 'http://localhost:3001';
+const api_base = 'https://todo-backend-dnqs.onrender.com/';
 
 function App() {
 	const [todos, setTodos] = useState([]);
